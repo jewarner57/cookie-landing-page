@@ -39,7 +39,7 @@ def home():
 def signup():
     """Displays the sign up success page"""
 
-    message = " is now subscribed"
+    message = " is now subscribed!"
     email = str(request.form.get("email"))
 
     if email_already_subscribed(email):

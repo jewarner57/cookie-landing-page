@@ -1,23 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
-
-<div>
+<section>
     <form action="/signup" method="POST">
-        <label>
-            <input type="email" required="true" name="email" placeholder="Sign up to be alerted!">
-        </label>
-
-        </p>
-
+        <h1>Get Alerted When Our Beta Goes Live</h1>
         <p>
-            <input type="submit" value="Submit">
+            <input id="email-signup-box" type="email" required="true" name="email" placeholder="your-email@email.com">
         </p>
-
-
-
-        </fieldset>
+        <p>
+            <input id="email-signup-submit" type="submit" value="Get Notified!">
+        </p>
+        </div>
     </form>
-    <img src="/static/images/cookie.png" />
-</div>
-
+</section>
 {% endblock content %}

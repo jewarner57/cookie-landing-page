@@ -4,11 +4,68 @@ body {
     height: 100%;
     margin: 0;
     background-color: bisque;
+    color: #444444
 }
 
 header {
     padding: 5px 30px;
-
     width: 100%;
     background-color: white;
+    box-shadow: 5px 5px 10px #555555;
+}
+
+#email-signup-box {
+    width: 50%;
+    height: 50px;
+    font-size: 24px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+#email-signup-submit {
+    width: 200px;
+    height: 50px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    font-size: 18px;
+    transition-duration: 0.4s;
+}
+
+#email-signup-submit:hover {
+    box-shadow: 5px 5px 10px #555555;
+    background-color: #429445
+}
+
+form {
+    width: 100%;
+}
+
+section {
+    height:50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.background-decorator {
+    z-index: -1;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%
+    
+}
+
+.signup-success {
+    background-color: white;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+
 }
