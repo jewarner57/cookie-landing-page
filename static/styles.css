@@ -58,7 +58,6 @@ section {
     display: flex;
     justify-content: center;
     width: 100%
-    
 }
 
 .signup-success {
@@ -67,5 +66,4 @@ section {
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 20px;
-
 }
