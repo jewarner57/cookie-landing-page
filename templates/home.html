@@ -1,22 +1,23 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>Home Page</h1>
+<div>
+    <form action="/signup" method="POST">
+        <label>
+            <input type="email" required="true" name="email" placeholder="Sign up to be alerted!">
+        </label>
 
-<form action="/signup" method="POST">
-    <label>
-        <input type="email" required="true" name="email" placeholder="Sign up to be alerted!">
-    </label>
+        </p>
 
-    </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
 
-    <p>
-        <input type="submit" value="Submit">
-    </p>
 
-    <img src="/static/images/cookie.jpeg" />
 
-    </fieldset>
-</form>
+        </fieldset>
+    </form>
+    <img src="/static/images/cookie.png" />
+</div>
 
 {% endblock content %}
