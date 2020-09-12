@@ -3,7 +3,7 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
-    background-color: bisque;
+    background-color: #FFD2B3;
     color: #444444
 }
 
@@ -52,12 +52,13 @@ section {
     text-align: center;
 }
 
-.background-decorator {
+.background-image {
     z-index: -1;
     position: fixed;
     display: flex;
     justify-content: center;
-    width: 100%
+    width: 100%;
+    margin-top: 2%;
 }
 
 .signup-success {
@@ -66,4 +67,30 @@ section {
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 20px;
+}
+
+.bgblob {
+    position: fixed;
+    z-index: -1;
+    box-sizing: content-box;
+    height: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blob-small {
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    padding-bottom: 70%;
+    background-image: url("./images/small-blob.svg");
+}
+
+.blob-small2 {
+    top: 0;
+    left: 60%;
+    width: 70%;
+    padding-bottom: 70%;
+    background-image: url("./images/small-blob2.svg");
 }
