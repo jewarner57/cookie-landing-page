@@ -35,6 +35,12 @@ def home():
     return render_template("home.html")
 
 
+@app.route("/about")
+def about():
+    """Displays the about page"""
+    return render_template("about.html")
+
+
 @app.route("/signup", methods=["POST"])
 def signup():
     """Displays the sign up success page"""
@@ -70,16 +76,6 @@ def subscribe_email(user_email):
     email_dict = {"email": user_email}
     emails_col.insert_one(email_dict)
     print(f"Added {user_email} to subscribers.")
-
-
-"""
-
-
-mydict = {"email": "jewarner57@gmail.com"}
-
-x = mycol
-
-print(x)"""
 
 
 if __name__ == "__main__":
